@@ -12,8 +12,8 @@ public class Asignatura {
     private String codigo;
     private String descripcion;
     
-    @ManyToMany(mappedBy = "asignaturas")
-    private List<Alumno> alumnos;
+    //@ManyToMany(mappedBy = "asignaturas")
+    //private List<Alumno> alumnos;
 
     public Asignatura(String codigo) {
         this.codigo = codigo;
@@ -63,12 +63,12 @@ public class Asignatura {
         return true;
     }
 
-    public List<Alumno> getAlumnos() {
-        return alumnos;
-    }
+    // public List<Alumno> getAlumnos() {
+    //     return alumnos;
+    // }
 
-    public void setAlumnos(List<Alumno> alumnos) {
-        this.alumnos = alumnos;
-    }
+    // public void setAlumnos(List<Alumno> alumnos) {
+    //     this.alumnos = alumnos;
+    // }
 
 }
