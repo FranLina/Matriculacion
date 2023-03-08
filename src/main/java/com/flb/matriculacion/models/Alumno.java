@@ -23,7 +23,7 @@ public class Alumno {
     private Date fechaNacimiento;
     private String telefono;
 
-    @ManyToMany(fetch = FetchType.LAZY)
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "alumno_asignatura", joinColumns = @JoinColumn(name = "id_alumno"), inverseJoinColumns = @JoinColumn(name = "codigo_asignatura"))
     private List<Asignatura> asignaturas;
 
